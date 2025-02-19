@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>ACTIVIDAD LOGIN-PASSWORD</title> 
+    <link  id="estilos" rel="stylesheet" href="archivo2.css">
+</head>
+<body>
+
+    <div class="login">
+        <img src="./manse.png" width="100px" height="100px" alt="texto">
+
+        <form>
+            <button type="button" onclick="cambiarCSS()"> Cambiar el CSS</button>
+            <br>
+            <label for="username"></label>
+            <input type="text" id="username" name="username" placeholder="username"><br>
+            <label for="password"></label>
+            <input type="password" id="password" placeholder=" password">
+            <br>
+            <button type="submit" value="Login">Login</button>
+        </form>
+    </div>
+    
+   <script>
+    function cambiarCSS() {
+      let link = document.getElementById("estilos");
+      link.href = (link.href.includes("archivo1.css")) ? "archivo2.css" : "archivo1.css";
+    }
+  </script>
+    
+</body> 
+</html>
